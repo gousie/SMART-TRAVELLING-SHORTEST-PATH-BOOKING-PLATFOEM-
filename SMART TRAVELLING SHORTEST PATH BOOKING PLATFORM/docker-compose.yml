@@ -1,0 +1,34 @@
+services:
+  db:
+    image: postgres:17
+    environment:
+      POSTGRES_DB: CTPDB
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-root}
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d CTPDB"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+  web:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      DATABASE_URL: postgresql+psycopg://postgres:${POSTGRES_PASSWORD:-root}@db:5432/CTPDB
+      STORAGE_SECRET: ${STORAGE_SECRET:?Set STORAGE_SECRET in .env first}
+      SEED_DEMO: "${SEED_DEMO:-true}"
+      DEMO_AUTOSIGNIN: "${DEMO_AUTOSIGNIN:-false}"
+      PORT: "8080"
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - ui_storage:/app/.cache
+volumes:
+  postgres_data:
+  ui_storage:

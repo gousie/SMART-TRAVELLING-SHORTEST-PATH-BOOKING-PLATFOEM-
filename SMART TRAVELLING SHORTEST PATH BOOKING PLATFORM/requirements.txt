@@ -1,0 +1,7 @@
+nicegui==2.24.2
+fastapi==0.143.0
+SQLAlchemy==2.1.4
+psycopg[binary]==3.3.6
+argon2-cffi==25.1.0
+python-dotenv==1.2.4
+reportlab==4.5.1

@@ -1,0 +1,35 @@
+{
+  "validated_at": "2026-10-11T14:41:58.752779+00:00",
+  "python": "3.13.16",
+  "suites": [
+    {
+      "suite": "sqlite",
+      "passed": 48,
+      "skipped": 5,
+      "failed": 0
+    },
+    {
+      "suite": "postgres",
+      "passed": 49,
+      "skipped": 4,
+      "failed": 0
+    },
+    {
+      "suite": "browser",
+      "passed": 4,
+      "skipped": 0,
+      "failed": 0
+    }
+  ],
+  "postgres_core_statement_coverage_pct": 98.49,
+  "lint": "passed",
+  "format": "passed",
+  "mypy": "passed (7 core modules)",
+  "configuration_parse": "CI and Compose YAML passed structural checks",
+  "not_executed": [
+    "Docker image build in this sandbox",
+    "Docker Compose launch",
+    "Remote CI execution",
+    "Production deployment"
+  ]
+}

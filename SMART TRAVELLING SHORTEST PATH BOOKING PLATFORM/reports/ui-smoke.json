@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "checks": [
+    "quick-search keyboard shortcut",
+    "network route planning",
+    "saved routes",
+    "registration page",
+    "admin train/bookings/activity pages",
+    "add-train modal",
+    "pause/resume train"
+  ],
+  "uncaught_browser_errors": []
+}

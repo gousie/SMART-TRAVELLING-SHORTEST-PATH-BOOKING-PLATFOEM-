@@ -1,0 +1,15 @@
+operation,input_size,median_ms,min_ms,python_peak_kib,repeats,runs_per_repeat
+merge_sort,100,0.14546,0.1417,4.0,5,5
+python_sorted_reference,100,0.00167,0.00164,0.85,5,5
+merge_sort,1000,1.97095,1.96467,33.05,5,5
+python_sorted_reference,1000,0.0383,0.03434,11.75,5,5
+merge_sort,5000,12.50938,12.08765,159.1,5,5
+python_sorted_reference,5000,0.58121,0.48191,58.51,5,5
+dijkstra,50,0.07181,0.06412,5.01,5,10
+dijkstra,200,0.26504,0.25531,21.2,5,10
+dijkstra,500,0.76966,0.64091,43.72,5,10
+bounded_dp_H4,12,0.02453,0.02174,1.08,5,10
+branch_bound_budget_1500,12,0.06641,0.06433,2.77,5,10
+seat_allocation_k6,120,0.01811,0.01793,11.33,5,10
+database_train_search,15,3.54711,3.0248,50.08,5,5
+database_admin_aggregate,46,89.62213,87.22326,309.77,5,3

@@ -1,0 +1,14 @@
+merge_sort                  n=  100    0.14546 ms       4.00 KiB
+python_sorted_reference     n=  100    0.00167 ms       0.85 KiB
+merge_sort                  n= 1000    1.97095 ms      33.05 KiB
+python_sorted_reference     n= 1000    0.03830 ms      11.75 KiB
+merge_sort                  n= 5000   12.50938 ms     159.10 KiB
+python_sorted_reference     n= 5000    0.58121 ms      58.51 KiB
+dijkstra                    n=   50    0.07181 ms       5.01 KiB
+dijkstra                    n=  200    0.26504 ms      21.20 KiB
+dijkstra                    n=  500    0.76966 ms      43.72 KiB
+bounded_dp_H4               n=   12    0.02453 ms       1.08 KiB
+branch_bound_budget_1500    n=   12    0.06641 ms       2.77 KiB
+seat_allocation_k6          n=  120    0.01811 ms      11.33 KiB
+database_train_search       n=   15    3.54711 ms      50.08 KiB
+database_admin_aggregate    n=   46   89.62213 ms     309.77 KiB

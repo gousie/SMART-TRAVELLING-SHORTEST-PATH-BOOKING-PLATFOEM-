@@ -1,0 +1,136 @@
+{
+  "generated_at": "2026-10-11T14:41:58.149245+00:00",
+  "database_backend": "postgresql",
+  "python": "3.13.16 (main, Oct  6 2026, 04:38:44) [GCC 14.2.0]",
+  "seed": 42,
+  "scope": "Median of five repeats; algorithms run in-memory. Optional database rows are read-only, warm local service latency. Not browser/network/production or process-pool roundtrip latency.",
+  "memory_scope": "tracemalloc peak Python allocation for one invocation; excludes interpreter baseline/native allocations.",
+  "measurements": [
+    {
+      "operation": "merge_sort",
+      "input_size": 100,
+      "median_ms": 0.14546,
+      "min_ms": 0.1417,
+      "python_peak_kib": 4.0,
+      "repeats": 5,
+      "runs_per_repeat": 5
+    },
+    {
+      "operation": "python_sorted_reference",
+      "input_size": 100,
+      "median_ms": 0.00167,
+      "min_ms": 0.00164,
+      "python_peak_kib": 0.85,
+      "repeats": 5,
+      "runs_per_repeat": 5
+    },
+    {
+      "operation": "merge_sort",
+      "input_size": 1000,
+      "median_ms": 1.97095,
+      "min_ms": 1.96467,
+      "python_peak_kib": 33.05,
+      "repeats": 5,
+      "runs_per_repeat": 5
+    },
+    {
+      "operation": "python_sorted_reference",
+      "input_size": 1000,
+      "median_ms": 0.0383,
+      "min_ms": 0.03434,
+      "python_peak_kib": 11.75,
+      "repeats": 5,
+      "runs_per_repeat": 5
+    },
+    {
+      "operation": "merge_sort",
+      "input_size": 5000,
+      "median_ms": 12.50938,
+      "min_ms": 12.08765,
+      "python_peak_kib": 159.1,
+      "repeats": 5,
+      "runs_per_repeat": 5
+    },
+    {
+      "operation": "python_sorted_reference",
+      "input_size": 5000,
+      "median_ms": 0.58121,
+      "min_ms": 0.48191,
+      "python_peak_kib": 58.51,
+      "repeats": 5,
+      "runs_per_repeat": 5
+    },
+    {
+      "operation": "dijkstra",
+      "input_size": 50,
+      "median_ms": 0.07181,
+      "min_ms": 0.06412,
+      "python_peak_kib": 5.01,
+      "repeats": 5,
+      "runs_per_repeat": 10
+    },
+    {
+      "operation": "dijkstra",
+      "input_size": 200,
+      "median_ms": 0.26504,
+      "min_ms": 0.25531,
+      "python_peak_kib": 21.2,
+      "repeats": 5,
+      "runs_per_repeat": 10
+    },
+    {
+      "operation": "dijkstra",
+      "input_size": 500,
+      "median_ms": 0.76966,
+      "min_ms": 0.64091,
+      "python_peak_kib": 43.72,
+      "repeats": 5,
+      "runs_per_repeat": 10
+    },
+    {
+      "operation": "bounded_dp_H4",
+      "input_size": 12,
+      "median_ms": 0.02453,
+      "min_ms": 0.02174,
+      "python_peak_kib": 1.08,
+      "repeats": 5,
+      "runs_per_repeat": 10
+    },
+    {
+      "operation": "branch_bound_budget_1500",
+      "input_size": 12,
+      "median_ms": 0.06641,
+      "min_ms": 0.06433,
+      "python_peak_kib": 2.77,
+      "repeats": 5,
+      "runs_per_repeat": 10
+    },
+    {
+      "operation": "seat_allocation_k6",
+      "input_size": 120,
+      "median_ms": 0.01811,
+      "min_ms": 0.01793,
+      "python_peak_kib": 11.33,
+      "repeats": 5,
+      "runs_per_repeat": 10
+    },
+    {
+      "operation": "database_train_search",
+      "input_size": 15,
+      "median_ms": 3.54711,
+      "min_ms": 3.0248,
+      "python_peak_kib": 50.08,
+      "repeats": 5,
+      "runs_per_repeat": 5
+    },
+    {
+      "operation": "database_admin_aggregate",
+      "input_size": 46,
+      "median_ms": 89.62213,
+      "min_ms": 87.22326,
+      "python_peak_kib": 309.77,
+      "repeats": 5,
+      "runs_per_repeat": 3
+    }
+  ]
+}

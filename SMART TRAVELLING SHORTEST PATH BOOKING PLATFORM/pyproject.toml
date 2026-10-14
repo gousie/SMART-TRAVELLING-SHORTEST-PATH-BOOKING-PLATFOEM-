@@ -1,0 +1,35 @@
+[project]
+name = "railora"
+version = "1.0.0"
+description = "Python-first railway reservation academic project"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra"
+markers = ["postgres: cross-connection PostgreSQL locking test", "e2e: browser tests against a running demo server"]
+
+[tool.ruff]
+line-length = 120
+exclude = [".cache"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "B"]
+ignore = ["B008"]
+
+[tool.mypy]
+python_version = "3.13"
+files = ["railora/algorithms.py", "railora/schemas.py", "railora/models.py", "railora/db.py", "railora/services.py", "railora/config.py", "railora/api.py"]
+check_untyped_defs = true
+warn_unused_ignores = true
+ignore_missing_imports = true
+
+[tool.coverage.run]
+source = ["railora"]
+omit = ["railora/web.py", "railora/web_components.py", "railora/admin_ui.py", "railora/lab_ui.py", "railora/seed.py"]
+
+[tool.coverage.report]
+show_missing = true
+# UI interaction is separately validated by browser end-to-end tests.
+exclude_lines = ["pragma: no cover", "@abstractmethod", "if TYPE_CHECKING:"]

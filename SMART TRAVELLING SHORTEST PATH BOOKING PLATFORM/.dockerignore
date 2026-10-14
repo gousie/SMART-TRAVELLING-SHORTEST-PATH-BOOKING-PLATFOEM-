@@ -1,0 +1,14 @@
+.env
+.cache
+.nicegui
+.venv
+__pycache__
+*.db
+*.log
+.git
+.coverage
+htmlcov
+.hypothesis
+.pytest_cache
+.mypy_cache
+.ruff_cache
