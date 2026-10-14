@@ -136,7 +136,7 @@ The Smart Travelling Shortest Path Booking Platform demonstrates the application
 
 ## Author
 
-**Shaik Gouse Basha**  
+**SHAIK GOUSE BASHA**  
 Student ID: `2601150020`  
 M.Tech – Artificial Intelligence and Data Science  
 K L University
